@@ -3,7 +3,7 @@
 ## 1. Phase Information
 - **Course:** SW302 — User Interface Development
 - **Project:** Her Motion — Fitness & Workout Planner
-- **Team:** Marwa, Rana, Yasmeen, Roaa
+- **Team:** Marwa Omar, Rana Sherif, Yasmeen Ayman, Roaa Abdelghany
 - **Phase:** UI/UX Design & Static Prototype
 
 ## 2. Phase Objective
