@@ -11,8 +11,6 @@
 
 Her Motion is a fitness and workout planning web application concept. It is intended to help users browse exercises, explore exercise instructions, organize workout routines, and review workout activity through a dashboard.
 
-The current deliverable is **Phase 2: UI/UX Design \& Static Prototype** for SW302 — User Interface Development. This phase focuses on UI/UX design and a responsive static prototype built with HTML5 and locally installed Tailwind CSS. Interactive behavior and React components belong to later phases.
-
 ## Phase 2 Scope
 
 The prototype is planned to include these pages:
