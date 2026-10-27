@@ -117,8 +117,6 @@ The `backend/data/` directory contains local JSON files intended to provide samp
 * [Requirements](docs/requirements.md)
 * [Design System](docs/design-system.md)
 * [Phase 2 Report](docs/phase-2-report.md)
-* [Phase 2 Checklist](tests/phase-2-checklist.md)
-* [Responsive Testing](tests/responsive-testing.md)
 
 ## Current Status
 
