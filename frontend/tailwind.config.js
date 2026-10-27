@@ -12,6 +12,11 @@ module.exports = {
         "deep-rose": "#B85C78",
         cream: "#FFF9F5",
         "soft-gray": "#F4F1F0",
+        peach: "#FFF3E6",
+        sage: "#E8EBE0",
+      },
+      fontFamily: {
+        heading: ["Poppins", "sans-serif"],
       },
     },
   },
