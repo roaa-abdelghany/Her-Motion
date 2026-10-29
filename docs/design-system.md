@@ -17,8 +17,6 @@ The following palette is the current implementation starting point and should be
 | `cream` | `#FFF9F5` | Main page background |
 | `soft-gray` | `#F4F1F0` | Secondary surfaces and card backgrounds |
 
-Use neutral text colors with sufficient contrast. Do not use pale pink for small text on a light background without checking contrast. Color should not be the only way to communicate meaning.
-
 ## 4. Typography
 - Use a clear, readable sans-serif font for the interface unless the Figma design specifies a different typeface.
 - Establish a consistent hierarchy for page titles, section headings, card titles, labels, and supporting text.
@@ -40,12 +38,10 @@ The following components should share consistent styling across pages:
 - Navigation and mobile navigation presentation
 - Summary/statistic cards
 - Exercise cards
-- Form fields, labels, and helper text
+- Form fields and labels
 - Section headings
 - Chart/visualization containers
-- Status labels or badges, if used
-
-Define repeated styles consistently rather than creating visually different versions of the same component on every page.
+- Status labels or badges
 
 ## 7. Responsive Behavior
 - Use a mobile-first layout approach.
@@ -70,7 +66,7 @@ Tailwind CSS must be installed locally; do not use the CDN. The current configur
 - `bg-cream` / `text-cream`
 - `bg-soft-gray` / `text-soft-gray`
 
-The CSS build input is `src/input.css`; the generated stylesheet is `src/output.css`. HTML pages should link to the generated stylesheet using the correct relative path.
+The CSS build input is `src/input.css`; the generated stylesheet is `src/output.css`.
 
 ## 10. Design Validation
-Before implementation is considered complete, compare each page with its Figma mockup, confirm desktop/mobile layouts, and check contrast and consistency. Update this document if the team makes a deliberate design-system change.
+Before implementation is considered complete, compare each page with its Figma mockup, confirm desktop/mobile layouts, and check contrast and consistency. 
