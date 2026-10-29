@@ -7,14 +7,14 @@
 - **Phase:** UI/UX Design & Static Prototype
 
 ## 2. Phase Objective
-The objective of this phase is to design and validate the user interface and experience, then build a static responsive prototype using HTML5 and locally installed Tailwind CSS. The prototype should communicate the intended desktop and mobile experience without implementing backend behavior or interactive application logic.
+The objective of this phase is to design and validate the user interface and experience, then build a static prototype using HTML5 and locally installed Tailwind CSS. The prototype should communicate the intended desktop and mobile experience without implementing backend behavior or interactive application logic.
 
 ## 3. Planned Deliverables
-- Wireframes/mockups for at least eight key pages, including desktop and mobile versions.
+- mockups for at eight key pages, including desktop and mobile versions.
 - Static HTML5 + Tailwind CSS pages.
-- Dashboard with visualizations.
+- Dashboard.
 - Responsive layouts and accessibility-conscious markup.
-- Repository documentation and testing evidence.
+- Repository documentation.
 
 ## 4. Planned Pages
 The repository currently contains these page files:
@@ -22,18 +22,13 @@ The repository currently contains these page files:
 - `dashboard.html`
 - `exercises.html`
 - `exercise-details.html`
-- `routine-builder.html`
+- `my-routine.html`
 - `login.html`
 - `register.html`
-- `profile.html`
 - `settings.html`
-
-The team should verify that all pages contain the final UI and that each page has a desktop and mobile layout. The presence of a file alone does not mean the page is complete.
 
 ## 5. Technical Setup
 The frontend uses locally installed Tailwind CSS rather than the CDN. The Tailwind input file is `src/input.css`, and the generated output file is `src/output.css`. The project includes Tailwind and PostCSS configuration files.
-
-The team should verify the `package.json` scripts and test the CSS build from the `frontend` directory before submission. The generated CSS should be rebuilt whenever relevant HTML classes or the input CSS change.
 
 ## 6. Design and Accessibility Approach
 The visual direction uses a blush-pink, rose, cream, and soft-gray palette, subject to final comparison with the Figma mockups. The implementation should use semantic HTML, a clear heading hierarchy, associated form labels, appropriate image alt text, visible focus styles, and readable contrast.

@@ -18,7 +18,7 @@ People who plan workouts may need to use separate sources to find exercises, rev
 Her Motion aims to present these related tasks in one coherent interface.
 
 ## 4. Proposed Solution
-The proposed application organizes the experience around:
+The proposed website organizes the experience around:
 - A dashboard for workout summaries and visual activity insights.
 - An exercise library for browsing and filtering exercises.
 - An exercise details page with instructions, target muscles, and safety guidance.
@@ -32,8 +32,6 @@ The intended users are people who want to plan and track fitness activities, inc
 - Beginners who need a clear way to discover exercises and read instructions.
 - Users who want to organize workouts into routines.
 - Regular exercisers who want to review activity summaries.
-
-These are proposed user groups and will be refined if user feedback or course guidance requires it.
 
 ## 6. Project Objectives
 1. Design a consistent UI/UX for the main application journey.
@@ -54,8 +52,6 @@ The current page plan contains nine HTML pages:
 - Profile
 - Settings
 
-This exceeds the minimum of eight pages in the Phase 2 brief. The team should verify that each page has both desktop and mobile layouts and that the dashboard includes at least one chart or visualization.
-
 ## 8. Technology and Tools
 - **HTML5:** Semantic structure for static pages.
 - **Tailwind CSS:** Locally installed utility-first CSS framework; CDN use is not permitted.
@@ -63,10 +59,8 @@ This exceeds the minimum of eight pages in the Phase 2 brief. The team should ve
 - **Local JSON data:** Sample exercises and routines are available for later phases.
 - **Figma:** UI/UX mockups and design reference.
 
-React and interactive data handling are planned for later phases, not the Phase 2 static prototype.
-
 ## 9. Expected Phase 2 Deliverables
-- Desktop and mobile wireframes/mockups.
+- Desktop and mobile mockups.
 - A static HTML5 + Tailwind CSS prototype.
 - Responsive layouts for every delivered page.
 - Accessibility-conscious markup, suitable contrast, and consistent spacing.
