@@ -836,6 +836,11 @@ video {
   border-color: rgb(214 211 209 / 0.6);
 }
 
+.bg-berry {
+  --tw-bg-opacity: 1;
+  background-color: rgb(147 64 91 / var(--tw-bg-opacity, 1));
+}
+
 .bg-blush {
   --tw-bg-opacity: 1;
   background-color: rgb(248 221 227 / var(--tw-bg-opacity, 1));
@@ -868,11 +873,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-}
-
-.bg-berry {
-  --tw-bg-opacity: 1;
-  background-color: rgb(147 64 91 / var(--tw-bg-opacity, 1));
 }
 
 .object-cover {
@@ -1022,6 +1022,11 @@ video {
   letter-spacing: 0.025em;
 }
 
+.text-berry {
+  --tw-text-opacity: 1;
+  color: rgb(147 64 91 / var(--tw-text-opacity, 1));
+}
+
 .text-deep-rose {
   --tw-text-opacity: 1;
   color: rgb(184 92 120 / var(--tw-text-opacity, 1));
@@ -1057,11 +1062,6 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
-.text-berry {
-  --tw-text-opacity: 1;
-  color: rgb(147 64 91 / var(--tw-text-opacity, 1));
-}
-
 .shadow-md {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
@@ -1093,14 +1093,14 @@ video {
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
-.focus\:ring-deep-rose:focus {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(184 92 120 / var(--tw-ring-opacity, 1));
-}
-
 .focus\:ring-berry:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(147 64 91 / var(--tw-ring-opacity, 1));
+}
+
+.focus\:ring-deep-rose:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(184 92 120 / var(--tw-ring-opacity, 1));
 }
 
 .focus\:ring-offset-2:focus {
