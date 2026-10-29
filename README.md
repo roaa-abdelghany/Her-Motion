@@ -64,8 +64,6 @@ Her-Motion/
 │   ├── postcss.config.js
 │   └── vite.config.js
 ├── tests/
-│   ├── phase-2-checklist.md
-│   └── responsive-testing.md
 └── README.md
 ```
 
