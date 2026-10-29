@@ -14,6 +14,7 @@ module.exports = {
         "soft-gray": "#F4F1F0",
         peach: "#FFF3E6",
         sage: "#E8EBE0",
+        berry: "#93405B",
       },
       fontFamily: {
         heading: ["Poppins", "sans-serif"],
