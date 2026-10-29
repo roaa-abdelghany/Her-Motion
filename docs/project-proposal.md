@@ -18,7 +18,7 @@ People who plan workouts may need to use separate sources to find exercises, rev
 Her Motion aims to present these related tasks in one coherent interface.
 
 ## 4. Proposed Solution
-The proposed application organizes the experience around:
+The proposed website organizes the experience around:
 - A dashboard for workout summaries and visual activity insights.
 - An exercise library for browsing and filtering exercises.
 - An exercise details page with instructions, target muscles, and safety guidance.
