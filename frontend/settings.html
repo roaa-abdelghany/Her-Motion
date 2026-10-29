@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings | Her Motion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/output.css">
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+<body class="bg-cream text-stone-800 min-h-screen flex flex-col">
+
+  <header class="border-b border-stone-200 bg-cream">
+    <nav aria-label="Main" class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 md:px-8">
+      <a href="./index.html" class="flex items-center gap-3 font-heading text-lg font-medium text-deep-rose">
+        <svg viewBox="0 0 442 495" fill="none" class="h-7 w-7" aria-hidden="true">
+          <path d="M197 368C190 250 150 90 90 68C60 58 38 110 40 170C45 280 130 400 212 468C300 390 405 240 410 90C405 40 370 15 340 20C280 40 235 200 227 368"
+                stroke="currentColor" stroke-width="28" stroke-linejoin="round"/>
+        </svg>
+        her motion
+      </a>
+
+      <ul class="hidden gap-6 text-sm lg:flex">
+        <li><a href="./dashboard.html" class="hover:underline">Dashboard</a></li>
+        <li><a href="./exercises.html" class="hover:underline">Exercises</a></li>
+        <li><a href="#" class="hover:underline">Planner</a></li>
+        <li><a href="./routine-builder.html" class="hover:underline">My routines</a></li>
+        <li><a href="#" class="hover:underline">Progress</a></li>
+        <li><a href="./settings.html" aria-current="page" class="font-semibold text-deep-rose">Settings</a></li>
+      </ul>
+
+      <div class="flex items-center gap-3">
+        <a href="./profile.html" aria-label="Your profile"
+           class="hidden h-9 w-9 items-center justify-center rounded-full bg-blush text-xs font-semibold text-deep-rose lg:flex">AM</a>
+
+        <details class="relative lg:hidden">
+          <summary class="cursor-pointer list-none text-2xl" aria-label="Open menu">☰</summary>
+          <ul class="absolute right-0 top-10 z-10 w-48 space-y-2 rounded-xl border border-stone-200 bg-white p-4 text-sm shadow-md">
+            <li><a href="./dashboard.html">Dashboard</a></li>
+            <li><a href="./exercises.html">Exercises</a></li>
+            <li><a href="#">Planner</a></li>
+            <li><a href="./routine-builder.html">My routines</a></li>
+            <li><a href="#">Progress</a></li>
+            <li><a href="./settings.html" class="font-semibold text-deep-rose">Settings</a></li>
+          </ul>
+        </details>
+      </div>
+    </nav>
+  </header>
+
+  <main class="mx-auto max-w-6xl w-full px-4 py-8 md:px-8 md:py-12 flex-1">
+    
+    <!-- Header Title Area -->
+    <div class="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between mb-8">
+      <div>
+        <span class="text-[11px] font-semibold uppercase tracking-wider text-deep-rose block mb-1">Make this space yours</span>
+        <h1 class="font-heading text-3xl font-medium text-stone-900 md:text-4xl">A little more about you.</h1>
+        <p class="mt-1 text-xs text-stone-600 md:text-sm">Your goals, your preferences, your pace. Keep everything feeling like a good fit.</p>
+      </div>
+      <button type="button" class="w-fit inline-flex items-center gap-2 rounded-xl bg-deep-rose px-5 py-3 text-xs font-semibold text-white shadow-sm hover:bg-rose focus:outline-none">
+        ✓ Save changes
+      </button>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2rem;">
+      
+      <aside style="grid-column: span 1;" class="space-y-6">
+        <nav class="rounded-3xl border border-stone-200 bg-white p-2 flex flex-col gap-1">
+          <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-2xl bg-blush/60 text-deep-rose text-xs font-semibold">
+            <span aria-hidden="true">👤</span>
+            Profile
+          </a>
+          <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-2xl text-stone-600 hover:bg-cream text-xs font-medium transition-colors">
+            <span aria-hidden="true">🎯</span>
+            Goals & preferences
+          </a>
+          <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-2xl text-stone-600 hover:bg-cream text-xs font-medium transition-colors">
+            <span aria-hidden="true">🔔</span>
+            Notifications
+          </a>
+          <a href="#" class="flex items-center gap-3 px-4 py-3 rounded-2xl text-stone-600 hover:bg-cream text-xs font-medium transition-colors">
+            <span aria-hidden="true">🔒</span>
+            Account & privacy
+          </a>
+        </nav>
+
+        <div class="px-3 pt-2">
+          <span class="text-deep-rose text-base mb-1 block">♡</span>
+          <p class="text-[11px] text-stone-500 leading-relaxed">A little reminder: your goals can change as you do.</p>
+        </div>
+      </aside>
+
+      <div style="grid-column: span 3;" class="space-y-8">
+        
+        <section class="rounded-3xl border border-stone-200 bg-white p-6 md:p-8 space-y-6">
+          <h2 class="font-heading text-xl font-medium text-stone-900">Your profile</h2>
+          
+          <div class="flex items-center gap-5 pt-2 pb-2">
+            <div class="h-16 w-16 rounded-full bg-blush text-deep-rose flex items-center justify-center text-lg font-semibold shrink-0">AM</div>
+            <div>
+              <h3 class="font-heading text-lg font-medium text-stone-900">Amelia Morgan</h3>
+              <p class="text-xs text-stone-500">Making space since May 2026</p>
+              <button type="button" class="mt-1 text-xs font-semibold text-deep-rose hover:underline">Change profile photo</button>
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem;" class="pt-4 border-t border-stone-100">
+            <div>
+              <label class="block text-xs font-semibold text-stone-800 mb-1.5">First name</label>
+              <input type="text" value="Amelia" class="w-full bg-white border border-stone-200 rounded-xl px-4 py-2.5 text-xs outline-none focus:border-deep-rose focus:ring-1 focus:ring-deep-rose">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-stone-800 mb-1.5">Last name</label>
+              <input type="text" value="Morgan" class="w-full bg-white border border-stone-200 rounded-xl px-4 py-2.5 text-xs outline-none focus:border-deep-rose focus:ring-1 focus:ring-deep-rose">
+            </div>
+            <div style="grid-column: 1 / -1;">
+              <label class="block text-xs font-semibold text-stone-800 mb-1.5">Email address</label>
+              <input type="email" value="amelia.morgan@email.com" class="w-full bg-white border border-stone-200 rounded-xl px-4 py-2.5 text-xs outline-none focus:border-deep-rose focus:ring-1 focus:ring-deep-rose">
+              <p class="text-[11px] text-stone-500 mt-1.5">Used for your account and the updates you choose to receive.</p>
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-stone-800 mb-1.5">Location</label>
+              <input type="text" value="Seattle, WA" class="w-full bg-white border border-stone-200 rounded-xl px-4 py-2.5 text-xs outline-none focus:border-deep-rose focus:ring-1 focus:ring-deep-rose">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-stone-800 mb-1.5">Time zone</label>
+              <select class="w-full bg-white border border-stone-200 rounded-xl px-3.5 py-2.5 text-xs outline-none focus:border-deep-rose cursor-pointer">
+                <option>Pacific Time (US & Canada)</option>
+              </select>
+            </div>
+          </div>
+        </section>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+          
+          <!-- Movement Goals Card -->
+          <section class="rounded-3xl border border-stone-200 bg-white p-6 space-y-5 flex flex-col justify-between">
+            <div>
+              <h2 class="font-heading text-lg font-medium text-stone-900">Your movement goals</h2>
+              <p class="text-xs text-stone-500 mt-1">Choose what you'd like a little more of.</p>
+              
+              <div class="flex flex-wrap gap-2 mt-4 mb-5">
+                <button type="button" class="border border-deep-rose/30 bg-blush text-deep-rose rounded-full px-3.5 py-1.5 text-xs font-semibold flex items-center gap-1">
+                  ✓ Build strength
+                </button>
+                <button type="button" class="border border-deep-rose/30 bg-blush text-deep-rose rounded-full px-3.5 py-1.5 text-xs font-semibold flex items-center gap-1">
+                  ✓ Feel more energized
+                </button>
+                <button type="button" class="border border-stone-200 text-stone-700 hover:bg-cream rounded-full px-3.5 py-1.5 text-xs font-medium">
+                  Improve mobility
+                </button>
+                <button type="button" class="border border-stone-200 text-stone-700 hover:bg-cream rounded-full px-3.5 py-1.5 text-xs font-medium">
+                  Find balance
+                </button>
+              </div>
+
+              <div class="space-y-4">
+                <div>
+                  <label class="block text-xs font-semibold text-stone-800 mb-1.5">Workouts per week</label>
+                  <select class="w-full bg-white border border-stone-200 rounded-xl px-3.5 py-2.5 text-xs outline-none focus:border-deep-rose cursor-pointer">
+                    <option>4 sessions</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-stone-800 mb-1.5">Weekly movement goal</label>
+                  <select class="w-full bg-white border border-stone-200 rounded-xl px-3.5 py-2.5 text-xs outline-none focus:border-deep-rose cursor-pointer">
+                    <option>120 minutes</option>
+                  </select>
+                  <p class="text-[11px] text-stone-500 mt-1.5">Leave space for rest. Your goals should support you, not pressure you.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="rounded-3xl border border-stone-200 bg-white p-6 space-y-5">
+            <h2 class="font-heading text-lg font-medium text-stone-900">What feels right for you</h2>
+            
+            <div class="space-y-4 pt-1">
+              <div>
+                <label class="block text-xs font-semibold text-stone-800 mb-1.5">Experience level</label>
+                <select class="w-full bg-white border border-stone-200 rounded-xl px-3.5 py-2.5 text-xs outline-none focus:border-deep-rose cursor-pointer">
+                  <option>Building confidence</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-stone-800 mb-1.5">Preferred session length</label>
+                <select class="w-full bg-white border border-stone-200 rounded-xl px-3.5 py-2.5 text-xs outline-none focus:border-deep-rose cursor-pointer">
+                  <option>25–40 minutes</option>
+                </select>
+              </div>
+              
+              <div>
+                <label class="block text-xs font-semibold text-stone-800 mb-1.5">Equipment you have</label>
+                <div class="flex flex-wrap gap-2 mt-2">
+                  <button type="button" class="border border-deep-rose/30 bg-blush text-deep-rose rounded-full px-3.5 py-1.5 text-xs font-semibold flex items-center gap-1">
+                    ✓ Mat
+                  </button>
+                  <button type="button" class="border border-deep-rose/30 bg-blush text-deep-rose rounded-full px-3.5 py-1.5 text-xs font-semibold flex items-center gap-1">
+                    ✓ Dumbbells
+                  </button>
+                  <button type="button" class="border border-stone-200 text-stone-700 hover:bg-cream rounded-full px-3.5 py-1.5 text-xs font-medium">
+                    Resistance band
+                  </button>
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-stone-800 mb-1.5">Measurement units</label>
+                <select class="w-full bg-white border border-stone-200 rounded-xl px-3.5 py-2.5 text-xs outline-none focus:border-deep-rose cursor-pointer">
+                  <option>Metric - kg, cm</option>
+                </select>
+              </div>
+            </div>
+          </section>
+
+        </div>
+
+        <section class="rounded-3xl border border-stone-200 bg-white p-6 md:p-8 space-y-6">
+          <div>
+            <h2 class="font-heading text-xl font-medium text-stone-900">A nudge, only when you want one</h2>
+            <p class="text-xs text-stone-500 mt-1">Choose which updates make it into your day. You're always in control.</p>
+          </div>
+          
+          <div class="space-y-5 pt-2">
+            <div class="flex items-center justify-between pb-5 border-b border-stone-100">
+              <div>
+                <h3 class="text-xs font-semibold text-stone-800">Workout reminders</h3>
+                <p class="text-[11px] text-stone-500 mt-0.5">A gentle reminder 30 minutes before a planned session.</p>
+              </div>
+              <label class="relative inline-flex cursor-pointer items-center">
+                <input type="checkbox" class="peer sr-only" checked />
+                <div class="peer h-6 w-11 rounded-full bg-stone-200 after:absolute after:bottom-[2px] after:left-[2px] after:h-5 after:w-5 after:rounded-full after:bg-white after:transition-all peer-checked:bg-deep-rose peer-checked:after:translate-x-5"></div>
+              </label>
+            </div>
+
+            <div class="flex items-center justify-between pb-5 border-b border-stone-100">
+              <div>
+                <h3 class="text-xs font-semibold text-stone-800">Your weekly plan</h3>
+                <p class="text-[11px] text-stone-500 mt-0.5">A Sunday email with a little space to plan the week ahead.</p>
+              </div>
+              <label class="relative inline-flex cursor-pointer items-center">
+                <input type="checkbox" class="peer sr-only" checked />
+                <div class="peer h-6 w-11 rounded-full bg-stone-200 after:absolute after:bottom-[2px] after:left-[2px] after:h-5 after:w-5 after:rounded-full after:bg-white after:transition-all peer-checked:bg-deep-rose peer-checked:after:translate-x-5"></div>
+              </label>
+            </div>
+
+            <div class="flex items-center justify-between pb-5 border-b border-stone-100">
+              <div>
+                <h3 class="text-xs font-semibold text-stone-800">Milestone celebrations</h3>
+                <p class="text-[11px] text-stone-500 mt-0.5">A little encouragement when you reach a personal milestone.</p>
+              </div>
+              <label class="relative inline-flex cursor-pointer items-center">
+                <input type="checkbox" class="peer sr-only" checked />
+                <div class="peer h-6 w-11 rounded-full bg-stone-200 after:absolute after:bottom-[2px] after:left-[2px] after:h-5 after:w-5 after:rounded-full after:bg-white after:transition-all peer-checked:bg-deep-rose peer-checked:after:translate-x-5"></div>
+              </label>
+            </div>
+
+            <div class="flex items-center justify-between">
+              <div>
+                <h3 class="text-xs font-semibold text-stone-800">Community stories & news</h3>
+                <p class="text-[11px] text-stone-500 mt-0.5">Occasional inspiration and updates from Her Motion.</p>
+              </div>
+              <label class="relative inline-flex cursor-pointer items-center">
+                <input type="checkbox" class="peer sr-only" />
+                <div class="peer h-6 w-11 rounded-full bg-stone-200 after:absolute after:bottom-[2px] after:left-[2px] after:h-5 after:w-5 after:rounded-full after:bg-white after:transition-all peer-checked:bg-deep-rose peer-checked:after:translate-x-5"></div>
+              </label>
+            </div>
+          </div>
+        </section>
+
+        <section class="rounded-3xl border border-stone-200 bg-white p-6 md:p-8 space-y-6">
+          <h2 class="font-heading text-xl font-medium text-stone-900">Account & privacy</h2>
+          
+          <div class="space-y-5 pt-2">
+            <div class="flex flex-wrap sm:flex-nowrap justify-between items-center gap-4 pb-5 border-b border-stone-100">
+              <div>
+                <h3 class="text-xs font-semibold text-stone-800">Password</h3>
+                <p class="text-[11px] text-stone-500 mt-0.5">Last updated September 8, 2026</p>
+              </div>
+              <button type="button" class="bg-white border border-stone-200 text-stone-800 hover:bg-cream rounded-xl px-4 py-2 flex items-center gap-2 text-xs font-semibold shadow-sm shrink-0">
+                🔒 Change password
+              </button>
+            </div>
+
+            <div class="flex flex-wrap sm:flex-nowrap justify-between items-center gap-4 pb-5 border-b border-stone-100">
+              <div>
+                <h3 class="text-xs font-semibold text-stone-800">Your data belongs to you.</h3>
+                <p class="text-[11px] text-stone-500 mt-0.5">Download your profile, routines, and workout history any time.</p>
+              </div>
+              <button type="button" class="bg-white border border-stone-200 text-stone-800 hover:bg-cream rounded-xl px-4 py-2 flex items-center gap-2 text-xs font-semibold shadow-sm shrink-0">
+                📥 Download my data
+              </button>
+            </div>
+
+            <div class="flex justify-between items-center pt-2">
+              <h3 class="text-xs font-semibold text-stone-800">Sign out</h3>
+              <button type="button" class="text-rose-600 text-xs font-semibold hover:underline">Delete account</button>
+            </div>
+          </div>
+        </section>
+
+        <div class="pt-2">
+          <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div>
+              <h3 class="text-xs font-semibold text-stone-800">A good fit can change over time.</h3>
+              <p class="text-[11px] text-stone-500 mt-0.5">Your updates are applied when you save your changes.</p>
+            </div>
+            <div class="flex items-center gap-3 shrink-0">
+              <button type="button" class="bg-white border border-stone-200 text-stone-800 hover:bg-cream rounded-xl px-5 py-2.5 text-xs font-semibold shadow-sm">
+                Cancel
+              </button>
+              <button type="button" class="bg-deep-rose hover:bg-rose text-white rounded-xl px-5 py-2.5 flex items-center gap-2 text-xs font-semibold shadow-sm">
+                ✓ Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="border-t border-stone-200 bg-stone-800 text-stone-300 mt-12">
+    <div class="mx-auto flex max-w-6xl justify-between px-4 py-4 text-xs md:px-8">
+      <p>Her Motion © 2026</p>
+      <p><a href="#" class="hover:underline">Help</a> · <a href="#" class="hover:underline">Privacy</a> · <a href="./settings.html" class="hover:underline font-semibold text-white">Settings</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>

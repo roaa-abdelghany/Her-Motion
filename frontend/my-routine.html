@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Routines | Her Motion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/output.css">
+</head>
+<body class="bg-cream text-stone-800">
+
+  <header class="border-b border-stone-200">
+    <nav aria-label="Main" class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 md:px-8">
+      <a href="./index.html" class="flex items-center gap-2 font-heading text-lg font-medium text-deep-rose">
+        <svg viewBox="0 0 442 495" fill="none" class="h-7 w-7" aria-hidden="true">
+          <path d="M197 368C190 250 150 90 90 68C60 58 38 110 40 170C45 280 130 400 212 468C300 390 405 240 410 90C405 40 370 15 340 20C280 40 235 200 227 368"
+                stroke="currentColor" stroke-width="28" stroke-linejoin="round"/>
+        </svg>
+        her motion
+      </a>
+
+      <ul class="hidden gap-6 text-sm lg:flex">
+        <li><a href="./dashboard.html" class="hover:underline">Dashboard</a></li>
+        <li><a href="./exercises.html" class="hover:underline">Exercises</a></li>
+        <li><a href="#" class="hover:underline">Planner</a></li>
+        <li><a href="./routine-builder.html" aria-current="page" class="font-semibold text-deep-rose border-b border-stone-300 pb-4">My routines</a></li>
+        <li><a href="#" class="hover:underline">Progress</a></li>
+        <li><a href="./settings.html" class="hover:underline">Settings</a></li>
+      </ul>
+      <div class="flex items-center gap-3">
+        <a href="./profile.html" aria-label="Your profile"
+           class="hidden h-9 w-9 items-center justify-center rounded-full bg-blush text-xs font-semibold text-deep-rose lg:flex">AM</a>
+
+        <details class="relative lg:hidden">
+          <summary class="cursor-pointer list-none text-2xl" aria-label="Open menu">☰</summary>
+          <ul class="absolute right-0 top-10 z-10 w-48 space-y-2 rounded-xl border border-stone-200 bg-white p-4 text-sm shadow-md">
+            <li><a href="./dashboard.html">Dashboard</a></li>
+            <li><a href="./exercises.html">Exercises</a></li>
+            <li><a href="#">Planner</a></li>
+            <li><a href="./routine-builder.html" class="font-semibold text-deep-rose">My routines</a></li>
+            <li><a href="#">Progress</a></li>
+            <li><a href="./settings.html">Settings</a></li>
+          </ul>
+        </details>
+      </div>
+    </nav>
+  </header>
+
+  <main class="mx-auto max-w-6xl px-4 py-8 md:px-8 md:py-12">
+    <div class="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+      <div>
+        <p class="text-[11px] font-semibold uppercase tracking-wide text-deep-rose">A home for your favorite movements</p>
+        <h1 class="mt-2 font-heading text-3xl font-medium md:text-4xl">Your routines. Your rhythm.</h1>
+        <p class="mt-2 text-xs text-stone-600 md:text-sm">Keep what feels good close by. A familiar routine is a lovely place to begin.</p>
+      </div>
+      <button type="button" class="flex items-center gap-2 rounded-xl bg-deep-rose px-6 py-3 text-sm font-semibold text-white shadow-md hover:bg-rose focus:outline-none focus:ring-2 focus:ring-deep-rose focus:ring-offset-2">
+        <span class="text-sm">+</span> Create a routine
+      </button>
+    </div>
+
+    <div class="mt-8 space-y-4">
+      <div class="flex flex-col gap-3 sm:flex-row">
+
+        <div class="relative w-full">
+          <input type="text" placeholder="⌕  Search your routines" class="w-full rounded-xl border border-stone-200 bg-white py-3 px-4 text-xs text-stone-800 placeholder-stone-600 focus:outline-none focus:ring-2 focus:ring-deep-rose">
+        </div>
+
+
+        <div class="flex gap-3">
+          <select class="rounded-xl border border-stone-200 bg-white px-4 py-3 text-xs text-stone-700 focus:outline-none focus:ring-2 focus:ring-deep-rose">
+            <option>All focus areas</option>
+            <option>Full body</option>
+            <option>Lower body</option>
+            <option>Upper body</option>
+            <option>Core</option>
+            <option>Mobility</option>
+          </select>
+          <select class="rounded-xl border border-stone-200 bg-white px-4 py-3 text-xs text-stone-700 focus:outline-none focus:ring-2 focus:ring-deep-rose">
+            <option>Recently used</option>
+            <option>Alphabetical</option>
+            <option>Duration</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap gap-2 text-xs">
+        <button type="button" class="rounded-full bg-blush px-4 py-2 font-semibold text-deep-rose">All routines · 6</button>
+        <button type="button" class="rounded-full bg-white px-4 py-2 text-stone-600 hover:bg-stone-50">Favorites · 4</button>
+        <button type="button" class="rounded-full bg-white px-4 py-2 text-stone-600 hover:bg-stone-50">Recently added</button>
+      </div>
+    </div>
+
+    <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+      <article class="overflow-hidden rounded-2xl border border-stone-200 bg-white">
+        <div class="relative">
+          <img src="./images/dumbbell-row.jpg" alt="Gentle strength exercise" class="h-40 w-full object-cover">
+          <button type="button" aria-label="Favorite routine" class="absolute right-3 top-3 flex h-7 w-7 items-center justify-center rounded-full bg-white/90 text-xs text-deep-rose shadow-sm">♡</button>
+        </div>
+        <div class="p-5">
+          <div class="flex items-center justify-between">
+            <span class="rounded-full bg-blush/60 px-3 py-1 text-[11px] font-semibold text-deep-rose">Full body</span>
+            <button type="button" aria-label="More options" class="text-stone-600">•••</button>
+          </div>
+          <h3 class="mt-3 font-heading text-lg font-medium">Gentle strength</h3>
+          <p class="mt-1 text-xs text-stone-600">Build a little more strength, at your pace.</p>
+          <p class="mt-3 flex gap-4 text-xs text-stone-600">
+            <span> ◷ 35 min</span>
+            <span> 7 exercises</span>
+          </p>
+          <p class="mt-2 text-[11px] text-stone-600">Last moved · Oct 19</p>
+          <div class="mt-4 flex items-center justify-between border-t border-stone-200 pt-3">
+            <button type="button" class="flex items-center gap-1.5 rounded-lg bg-deep-rose px-3 py-2 text-xs font-semibold text-white hover:bg-rose">
+              <span>🗒</span> Plan workout
+            </button>
+            <a href="#" class="text-xs font-semibold text-deep-rose hover:underline">Edit routine →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="overflow-hidden rounded-2xl border border-stone-200 bg-white">
+        <div class="relative">
+          <img src="./images/forearm-plank.jpg" alt="A little core care exercise" class="h-40 w-full object-cover">
+          <button type="button" aria-label="Favorite routine" class="absolute right-3 top-3 flex h-7 w-7 items-center justify-center rounded-full bg-white/90 text-xs text-deep-rose shadow-sm">♡</button>
+        </div>
+        <div class="p-5">
+          <div class="flex items-center justify-between">
+            <span class="rounded-full bg-blush/60 px-3 py-1 text-[11px] font-semibold text-deep-rose">Core</span>
+            <button type="button" aria-label="More options" class="text-stone-600">•••</button>
+          </div>
+          <h3 class="mt-3 font-heading text-lg font-medium">A little core care</h3>
+          <p class="mt-1 text-xs text-stone-600">A strong, steady center for everyday life.</p>
+          <p class="mt-3 flex gap-4 text-xs text-stone-600">
+            <span>◷ 20 min</span>
+            <span> 6 exercises</span>
+          </p>
+          <p class="mt-2 text-[11px] text-stone-600">Last moved · Oct 18</p>
+          <div class="mt-4 flex items-center justify-between border-t border-stone-200 pt-3">
+            <button type="button" class="flex items-center gap-1.5 rounded-lg bg-deep-rose px-3 py-2 text-xs font-semibold text-white hover:bg-rose">
+              <span>🗒</span> Plan workout
+            </button>
+            <a href="#" class="text-xs font-semibold text-deep-rose hover:underline">Edit routine →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="overflow-hidden rounded-2xl border border-stone-200 bg-white">
+        <div class="relative">
+          <img src="./images/Upper-body.jpg" alt="Upper body ease exercise" class="h-40 w-full object-cover">
+          <button type="button" aria-label="Favorite routine" class="absolute right-3 top-3 flex h-7 w-7 items-center justify-center rounded-full bg-white/90 text-xs text-deep-rose shadow-sm">♡</button>
+        </div>
+        <div class="p-5">
+          <div class="flex items-center justify-between">
+            <span class="rounded-full bg-blush/60 px-3 py-1 text-[11px] font-semibold text-deep-rose">Upper body</span>
+            <button type="button" aria-label="More options" class="text-stone-600">•••</button>
+          </div>
+          <h3 class="mt-3 font-heading text-lg font-medium">Upper body ease</h3>
+          <p class="mt-1 text-xs text-stone-600">Simple strength for shoulders, back, and arms.</p>
+          <p class="mt-3 flex gap-4 text-xs text-stone-600">
+            <span>◷ 25 min</span>
+            <span> 4 exercises</span>
+          </p>
+          <p class="mt-2 text-[11px] text-stone-600">Last moved · Oct 12</p>
+          <div class="mt-4 flex items-center justify-between border-t border-stone-200 pt-3">
+            <button type="button" class="flex items-center gap-1.5 rounded-lg bg-deep-rose px-3 py-2 text-xs font-semibold text-white hover:bg-rose">
+              <span>🗒</span> Plan workout
+            </button>
+            <a href="#" class="text-xs font-semibold text-deep-rose hover:underline">Edit routine →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="overflow-hidden rounded-2xl border border-stone-200 bg-white">
+        <div class="relative">
+          <img src="./images/glute-bridge.jpg" alt="Gentle full body exercise" class="h-40 w-full object-cover">
+          <button type="button" aria-label="Favorite routine" class="absolute right-3 top-3 flex h-7 w-7 items-center justify-center rounded-full bg-white/90 text-xs text-deep-rose shadow-sm">♡</button>
+        </div>
+        <div class="p-5">
+          <div class="flex items-center justify-between">
+            <span class="rounded-full bg-blush/60 px-3 py-1 text-[11px] font-semibold text-deep-rose">Full body</span>
+            <button type="button" aria-label="More options" class="text-stone-600">•••</button>
+          </div>
+          <h3 class="mt-3 font-heading text-lg font-medium">Gentle full body</h3>
+          <p class="mt-1 text-xs text-stone-600">A balanced reset for busy mornings.</p>
+          <p class="mt-3 flex gap-4 text-xs text-stone-600">
+            <span>◷ 25 min</span>
+            <span> 6 exercises</span>
+          </p>
+          <p class="mt-2 text-[11px] text-stone-600">Last moved · Oct 20</p>
+          <div class="mt-4 flex items-center justify-between border-t border-stone-200 pt-3">
+            <button type="button" class="flex items-center gap-1.5 rounded-lg bg-deep-rose px-3 py-2 text-xs font-semibold text-white hover:bg-rose">
+              <span>🗒</span> Plan workout
+            </button>
+            <a href="#" class="text-xs font-semibold text-deep-rose hover:underline">Edit routine →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="overflow-hidden rounded-2xl border border-stone-200 bg-white">
+        <div class="relative">
+          <img src="./images/bodyweight-squat.jpg" alt="Lower body love exercise" class="h-40 w-full object-cover">
+          <button type="button" aria-label="Favorite routine" class="absolute right-3 top-3 flex h-7 w-7 items-center justify-center rounded-full bg-white/90 text-xs text-deep-rose shadow-sm">♡</button>
+        </div>
+        <div class="p-5">
+          <div class="flex items-center justify-between">
+            <span class="rounded-full bg-blush/60 px-3 py-1 text-[11px] font-semibold text-deep-rose">Lower body</span>
+            <button type="button" aria-label="More options" class="text-stone-600">•••</button>
+          </div>
+          <h3 class="mt-3 font-heading text-lg font-medium">Lower body love</h3>
+          <p class="mt-1 text-xs text-stone-600">Steady strength for legs and glutes.</p>
+          <p class="mt-3 flex gap-4 text-xs text-stone-600">
+            <span>◷ 40 min</span>
+            <span> 8 exercises</span>
+          </p>
+          <p class="mt-2 text-[11px] text-stone-600">Last moved · Today</p>
+          <div class="mt-4 flex items-center justify-between border-t border-stone-200 pt-3">
+            <button type="button" class="flex items-center gap-1.5 rounded-lg bg-deep-rose px-3 py-2 text-xs font-semibold text-white hover:bg-rose">
+              <span>🗒</span> Plan workout
+            </button>
+            <a href="#" class="text-xs font-semibold text-deep-rose hover:underline">Edit routine →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="overflow-hidden rounded-2xl border border-stone-200 bg-white">
+        <div class="relative">
+          <img src="./images/seated-side-stretch.jpg" alt="Slow and steady flow exercise" class="h-40 w-full object-cover">
+          <button type="button" aria-label="Favorite routine" class="absolute right-3 top-3 flex h-7 w-7 items-center justify-center rounded-full bg-white/90 text-xs text-deep-rose shadow-sm">♡</button>
+        </div>
+        <div class="p-5">
+          <div class="flex items-center justify-between">
+            <span class="rounded-full bg-blush/60 px-3 py-1 text-[11px] font-semibold text-deep-rose">Mobility</span>
+            <button type="button" aria-label="More options" class="text-stone-600">•••</button>
+          </div>
+          <h3 class="mt-3 font-heading text-lg font-medium">Slow & steady flow</h3>
+          <p class="mt-1 text-xs text-stone-600">Unwind, lengthen, and breathe a little deeper.</p>
+          <p class="mt-3 flex gap-4 text-xs text-stone-600">
+            <span>◷ 30 min</span>
+            <span> 5 exercises</span>
+          </p>
+          <p class="mt-2 text-[11px] text-stone-600">Planned · Sat, Oct 24</p>
+          <div class="mt-4 flex items-center justify-between border-t border-stone-200 pt-3">
+            <button type="button" class="flex items-center gap-1.5 rounded-lg bg-deep-rose px-3 py-2 text-xs font-semibold text-white hover:bg-rose">
+              <span>🗒</span> Plan workout
+            </button>
+            <a href="#" class="text-xs font-semibold text-deep-rose hover:underline">Edit routine →</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="mt-12 flex flex-col gap-4 rounded-2xl bg-blush/60 p-6 sm:flex-row sm:items-center sm:justify-between md:p-8 border border-stone-200/60">
+      <div class="flex items-center gap-4">
+        <span class="flex h-8 w-8 shrink-0 items-center justify-center text-xl text-deep-rose" aria-hidden="true"></span>
+        <div>
+          <h2 class="font-heading text-lg font-medium text-stone-800">Make something that feels like you.</h2>
+          <p class="mt-1 text-xs text-stone-600">Choose a few exercises, give your routine a name, and make it your own. Start small — you can always add more.</p>
+        </div>
+      </div>
+      <button type="button" class="shrink-0 rounded-xl bg-white px-5 py-3 text-xs font-semibold text-stone-800 border border-stone-200 hover:border-deep-rose focus:outline-none focus:ring-2 focus:ring-deep-rose">
+        + Build a new routine
+      </button>
+    </div>
+
+  </main>
+  <footer class="mt-16 bg-stone-800 text-stone-300">
+    <div class="mx-auto flex max-w-6xl justify-between px-4 py-4 text-xs md:px-8">
+      <p>Her Motion © 2026</p>
+      <p><a href="#" class="hover:underline">Help</a> · <a href="#" class="hover:underline">Privacy</a> · <a href="./settings.html" class="hover:underline">Settings</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
