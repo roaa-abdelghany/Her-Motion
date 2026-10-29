@@ -3,13 +3,280 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Her Motion</title>
+  <title>Her Motion | A little movement. A little more you.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./src/output.css">
 </head>
-<body class="min-h-screen bg-cream flex items-center justify-center">
-  <main class="text-center p-8">
-    <h1 class="text-4xl font-bold text-deep-rose">Her Motion</h1>
-    <p class="mt-4 text-gray-600">Your fitness journey starts here.</p>
+<body class="bg-cream text-stone-800">
+
+  <!-- Navigation Header -->
+  <header class="border-b border-stone-200">
+    <nav aria-label="Main" class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 md:px-8">
+      <a href="./index.html" class="flex items-center gap-3 font-heading text-lg font-medium text-deep-rose">
+        <svg viewBox="0 0 442 495" fill="none" class="h-7 w-7" aria-hidden="true">
+          <path d="M197 368C190 250 150 90 90 68C60 58 38 110 40 170C45 280 130 400 212 468C300 390 405 240 410 90C405 40 370 15 340 20C280 40 235 200 227 368"
+                stroke="currentColor" stroke-width="28" stroke-linejoin="round"/>
+        </svg>
+        her motion
+      </a>
+
+      <ul class="hidden gap-6 text-sm lg:flex">
+        <li><a href="./dashboard.html" class="hover:underline">Dashboard</a></li>
+        <li><a href="./exercises.html" class="hover:underline">Exercises</a></li>
+        <li><a href="#" class="hover:underline">Planner</a></li>
+        <li><a href="./routine-builder.html" class="hover:underline">My routines</a></li>
+        <li><a href="#" class="hover:underline">Progress</a></li>
+        <li><a href="./settings.html" class="hover:underline">Settings</a></li>
+      </ul>
+
+      <div class="flex items-center gap-3">
+        <a href="./profile.html" aria-label="Your profile"
+           class="hidden h-9 w-9 items-center justify-center rounded-full bg-blush text-xs font-semibold text-deep-rose lg:flex">AM</a>
+
+        <details class="relative lg:hidden">
+          <summary class="cursor-pointer list-none text-2xl" aria-label="Open menu">☰</summary>
+          <ul class="absolute right-0 top-10 z-10 w-48 space-y-2 rounded-xl border border-stone-200 bg-white p-4 text-sm shadow-md">
+            <li><a href="./dashboard.html">Dashboard</a></li>
+            <li><a href="./exercises.html">Exercises</a></li>
+            <li><a href="#">Planner</a></li>
+            <li><a href="./routine-builder.html">My routines</a></li>
+            <li><a href="#">Progress</a></li>
+            <li><a href="./settings.html">Settings</a></li>
+          </ul>
+        </details>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero Section -->
+    <section aria-labelledby="hero-title" class="bg-peach">
+      <div class="mx-auto grid max-w-6xl items-center gap-8 px-4 py-8 md:px-8 sm:grid-cols-2">
+        <div>
+          <p class="text-xs font-semibold uppercase tracking-wide text-deep-rose">Your pace. Your power. Your motion.</p>
+          <h1 id="hero-title" class="mt-4 font-heading text-4xl font-medium md:text-4xl">
+            A little movement.<br>A little more you.
+          </h1>
+          <p class="mt-3 text-xs text-stone-700">
+            Build strength, find your rhythm, and feel good in your body. A gentler space to plan workouts and celebrate every step forward.
+          </p>
+          <div class="mt-6 flex flex-col gap-3 sm:flex-row">
+            <a href="./register.html"
+               class="rounded-lg bg-deep-rose px-5 py-3 text-xs font-semibold text-white focus:outline-none focus:ring-2 focus:ring-deep-rose focus:ring-offset-2">→ Find your motion</a>
+            <a href="./exercises.html"
+               class="rounded-lg border border-stone-300 bg-white px-5 py-3 text-xs font-medium text-stone-800 focus:outline-none focus:ring-2 focus:ring-deep-rose">Explore exercises</a>
+          </div>
+          <p class="mt-4 text-xs text-stone-600">No pressure. No perfect starting point. Just you.</p>
+        </div>
+
+        <figure class="flex flex-col gap-3">
+          <img src="./images/home.jpg"
+               alt="Woman stretching to one side in a bright, calm studio"
+               class="aspect-[4/3] w-full rounded-3xl object-cover">
+          <figcaption class="flex items-center gap-3 rounded-2xl border border-stone-200 bg-white p-4 shadow-md">
+            <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-blush text-xs font-semibold text-deep-rose" aria-hidden="true">♡</span>
+            <span>
+              <span class="block text-xs font-semibold text-stone-800">Strong looks different on everyone.</span>
+              <span class="block text-xs text-stone-600">Make room for your kind of movement.</span>
+            </span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Why Section -->
+    <section id="why" aria-labelledby="why-title" class="mx-auto grid max-w-6xl gap-8 px-4 py-8 md:px-8 sm:grid-cols-2">
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-wide text-deep-rose">Wellness, without the all-or-nothing</p>
+        <h2 id="why-title" class="mt-3 font-heading text-3xl font-medium md:text-4xl">Not a new you.<br>More room for the real you.</h2>
+      </div>
+      <div>
+        <p class="text-xs text-stone-700">
+          Her Motion brings simple planning, clear exercise guidance, and meaningful progress into one calm space. Move in ways you enjoy. Build a routine that fits your life.
+        </p>
+        <dl class="mt-6 grid grid-cols-3 gap-4">
+          <div class="flex flex-col-reverse"><dt class="text-xs text-stone-600">guided exercises</dt><dd class="font-heading text-2xl font-medium">120+</dd></div>
+          <div class="flex flex-col-reverse"><dt class="text-xs text-stone-600">minute routines</dt><dd class="font-heading text-2xl font-medium">15–45</dd></div>
+          <div class="flex flex-col-reverse"><dt class="text-xs text-stone-600">always welcome</dt><dd class="font-heading text-2xl font-medium">Your pace</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section aria-labelledby="features-title" class="bg-white">
+      <div class="mx-auto max-w-6xl px-4 py-8 md:px-8">
+        <p class="text-xs font-semibold uppercase tracking-wide text-deep-rose">A little structure. A lot of possibility.</p>
+        <h2 id="features-title" class="mt-3 font-heading text-3xl font-medium md:text-4xl">Everything you need to keep showing up.</h2>
+
+        <ul class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <li class="rounded-2xl border border-stone-200 bg-cream p-6">
+            <span class="flex h-7 w-7 items-center justify-center rounded-xl bg-blush text-sm text-deep-rose" aria-hidden="true">▦</span>
+            <p class="mt-6 text-xs text-deep-rose">Make space for movement</p>
+            <h3 class="mt-1 font-heading text-lg font-medium">A plan that fits your week</h3>
+            <p class="mt-3 text-xs text-stone-700">Bring a little intention to your calendar. Schedule your favorite sessions, leave room for rest, and adjust as life happens.</p>
+            <a href="#" class="mt-4 inline-block text-xs font-semibold text-deep-rose hover:underline">Explore the planner →</a>
+          </li>
+          <li class="rounded-2xl border border-stone-200 bg-cream p-6">
+            <span class="flex h-7 w-7 items-center justify-center rounded-xl bg-blush text-sm text-deep-rose" aria-hidden="true">◎</span>
+            <p class="mt-6 text-xs text-deep-rose">Find what feels right</p>
+            <h3 class="mt-1 font-heading text-lg font-medium">Guidance, not guesswork</h3>
+            <p class="mt-3 text-xs text-stone-700">Discover exercises for every experience level, with clear form tips and options for your space and equipment.</p>
+            <a href="./exercises.html" class="mt-4 inline-block text-xs font-semibold text-deep-rose hover:underline">Browse the library →</a>
+          </li>
+          <li class="rounded-2xl border border-stone-200 bg-cream p-6">
+            <span class="flex h-7 w-7 items-center justify-center rounded-xl bg-blush text-sm text-deep-rose" aria-hidden="true">↗</span>
+            <p class="mt-6 text-xs text-deep-rose">Notice your own progress</p>
+            <h3 class="mt-1 font-heading text-lg font-medium">Small steps worth celebrating</h3>
+            <p class="mt-3 text-xs text-stone-700">See your consistency grow, celebrate personal milestones, and look back at the work you have put into yourself.</p>
+            <a href="./dashboard.html" class="mt-4 inline-block text-xs font-semibold text-deep-rose hover:underline">See your progress →</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Featured Routines Section -->
+    <section aria-labelledby="routine-title" class="mx-auto max-w-6xl px-4 py-8 md:px-8">
+      <div class="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+        <div>
+          <p class="text-xs font-semibold uppercase tracking-wide text-deep-rose">Start with something that feels good</p>
+          <h2 id="routine-title" class="mt-3 font-heading text-3xl font-medium md:text-4xl">Your next favorite way to move.</h2>
+          <p class="mt-2 text-xs text-stone-700">Build from a guided routine or find one new exercise. There is no wrong place to begin.</p>
+        </div>
+        <a href="./exercises.html"
+           class="w-fit rounded-lg border border-stone-300 bg-white px-4 py-2 text-xs font-medium text-stone-800 focus:outline-none focus:ring-2 focus:ring-deep-rose">→ Explore all exercises</a>
+      </div>
+
+      <div class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Routine Card -->
+        <article aria-labelledby="gentle-title" class="rounded-2xl bg-blush/60 p-6">
+          <p class="w-fit rounded-full border border-stone-300 bg-white px-3 py-1 text-[11px] font-semibold uppercase text-deep-rose">Your first routine</p>
+          <h3 id="gentle-title" class="mt-4 font-heading text-2xl font-medium">Gentle full body</h3>
+          <p class="mt-2 text-xs text-stone-700">A balanced little reset, from shoulders to toes. Simple movements to help you reconnect.</p>
+          <p class="mt-4 flex gap-2 text-xs">
+            <span class="rounded-full border border-stone-200 bg-white px-3 py-1">25 min</span>
+            <span class="rounded-full border border-stone-200 bg-white px-3 py-1">Beginner</span>
+          </p>
+          <ul class="mt-4 space-y-2 text-xs">
+            <li><span class="text-deep-rose" aria-hidden="true">✓</span> Bodyweight squat · 3 × 12</li>
+            <li><span class="text-deep-rose" aria-hidden="true">✓</span> Glute bridge · 3 × 15</li>
+            <li><span class="text-deep-rose" aria-hidden="true">✓</span> Forearm plank · 3 × 30 sec</li>
+          </ul>
+          <a href="./routine-builder.html"
+             class="mt-6 inline-block rounded-lg bg-deep-rose px-4 py-3 text-xs font-semibold text-white focus:outline-none focus:ring-2 focus:ring-deep-rose focus:ring-offset-2">+ Make this routine yours</a>
+        </article>
+
+        <!-- Exercise Card 1 -->
+        <article class="overflow-hidden rounded-2xl border border-stone-200 bg-white">
+          <img src="./images/bodyweight-squat.jpg" alt="Woman doing a bodyweight squat on a mat" class="h-40 w-full object-cover">
+          <div class="p-5">
+            <p class="flex justify-between text-[11px] font-semibold uppercase text-deep-rose">
+              <span>Lower body</span>
+              <span class="normal-case font-medium text-stone-600">Beginner</span>
+            </p>
+            <h3 class="mt-1 font-heading text-lg font-medium">Bodyweight squat</h3>
+            <p class="mt-1 text-xs text-stone-600">No equipment · 3 × 12 reps · 4 min</p>
+            <div class="mt-4 flex items-center justify-between border-t border-stone-200 pt-3">
+              <a href="./exercise-details.html" class="text-xs font-semibold text-deep-rose hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-deep-rose">View exercise →</a>
+              <button type="button" aria-label="Add Bodyweight squat to routine" class="text-2xl text-deep-rose focus-visible:outline focus-visible:outline-2 focus-visible:outline-deep-rose">+</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Exercise Card 2 -->
+        <article class="overflow-hidden rounded-2xl border border-stone-200 bg-white">
+          <img src="./images/glute-bridge.jpg" alt="Woman doing a glute bridge on a mat" class="h-40 w-full object-cover">
+          <div class="p-5">
+            <p class="flex justify-between text-[11px] font-semibold uppercase text-deep-rose">
+              <span>Lower body</span>
+              <span class="normal-case font-medium text-stone-600">Beginner</span>
+            </p>
+            <h3 class="mt-1 font-heading text-lg font-medium">Glute bridge</h3>
+            <p class="mt-1 text-xs text-stone-600">Mat · 3 × 15 reps · 4 min</p>
+            <div class="mt-4 flex items-center justify-between border-t border-stone-200 pt-3">
+              <a href="./exercise-details.html" class="text-xs font-semibold text-deep-rose hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-deep-rose">View exercise →</a>
+              <button type="button" aria-label="Add Glute bridge to routine" class="text-2xl text-deep-rose focus-visible:outline focus-visible:outline-2 focus-visible:outline-deep-rose">+</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how" aria-labelledby="how-title" class="bg-peach">
+      <div class="mx-auto max-w-6xl px-4 py-8 md:px-8">
+        <p class="text-xs font-semibold uppercase tracking-wide text-deep-rose">A simple way to begin</p>
+        <h2 id="how-title" class="mt-3 font-heading text-3xl font-medium md:text-4xl">Less overthinking. More moving.</h2>
+
+        <ol class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <li class="flex gap-4">
+            <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-blush text-xs font-semibold text-deep-rose" aria-hidden="true">1</span>
+            <div>
+              <h3 class="font-heading text-lg font-medium">Find your starting point</h3>
+              <p class="mt-1 text-xs text-stone-700">Tell us what you enjoy, your goals, and the time you have. We will help you find your rhythm.</p>
+            </div>
+          </li>
+          <li class="flex gap-4">
+            <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-blush text-xs font-semibold text-deep-rose" aria-hidden="true">2</span>
+            <div>
+              <h3 class="font-heading text-lg font-medium">Build a week that works</h3>
+              <p class="mt-1 text-xs text-stone-700">Save exercises, create a routine, and make a little space in your week. Rest days belong here, too.</p>
+            </div>
+          </li>
+          <li class="flex gap-4">
+            <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-blush text-xs font-semibold text-deep-rose" aria-hidden="true">3</span>
+            <div>
+              <h3 class="font-heading text-lg font-medium">Show up. Notice. Repeat.</h3>
+              <p class="mt-1 text-xs text-stone-700">Log each session, see your progress, and keep choosing what feels right for you.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community" aria-labelledby="community-title" class="mx-auto grid max-w-6xl items-center gap-8 px-4 py-8 md:px-8 sm:grid-cols-2">
+      <img src="./images/mat.png"
+           alt="Amelia sitting cross-legged on a mat, smiling with a mug in her hands"
+           class="aspect-[4/3] w-full rounded-3xl object-cover">
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-wide text-deep-rose">Progress that feels like you</p>
+        <h2 id="community-title" class="mt-3 font-heading text-3xl font-medium md:text-4xl">“I stopped starting over.<br>I just kept showing up.”</h2>
+        <p class="mt-4 text-xs text-stone-700">For Amelia, progress meant finding 25 minutes for herself, three times a week. Six months later, her routine feels less like a task and more like coming home.</p>
+        <dl class="mt-6 grid grid-cols-3 gap-4">
+          <div class="flex flex-col-reverse"><dt class="text-xs text-stone-600">of making space</dt><dd class="font-heading text-lg font-medium">6 months</dd></div>
+          <div class="flex flex-col-reverse"><dt class="text-xs text-stone-600">one at a time</dt><dd class="font-heading text-lg font-medium">87 sessions</dd></div>
+          <div class="flex flex-col-reverse"><dt class="text-xs text-stone-600">in everyday life</dt><dd class="font-heading text-lg font-medium">More energy</dd></div>
+        </dl>
+        <div class="mt-6 border-t border-stone-200 pt-4">
+          <p class="text-xs font-semibold">Amelia M. · Her Motion member</p>
+          <p class="mt-1 text-xs text-stone-600">Every journey is different. Your progress is your own.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section aria-labelledby="cta-title" class="bg-blush/60">
+      <div class="mx-auto max-w-6xl px-4 py-8 text-center md:px-8">
+        <p class="text-xs font-semibold uppercase tracking-wide text-deep-rose">There is room for you here</p>
+        <h2 id="cta-title" class="mt-3 font-heading text-3xl font-medium md:text-4xl">Your next chapter starts with one small move.</h2>
+        <p class="mt-3 text-xs text-stone-700">Discover what feels good. Make a plan that fits. Grow from there.</p>
+        <a href="./register.html"
+           class="mt-6 inline-block rounded-lg bg-deep-rose px-5 py-3 text-xs font-semibold text-white focus:outline-none focus:ring-2 focus:ring-deep-rose focus:ring-offset-2">→ Find your motion</a>
+        <p class="mt-4 text-xs text-stone-600">Free to begin. Always at your pace.</p>
+      </div>
+    </section>
+
   </main>
+
+  <!-- Footer -->
+  <footer class="bg-stone-800 text-stone-300">
+    <div class="mx-auto flex max-w-6xl justify-between px-4 py-4 text-xs md:px-8">
+      <p>Her Motion © 2026</p>
+      <p><a href="#" class="hover:underline">Help</a> · <a href="#" class="hover:underline">Privacy</a> · <a href="./settings.html" class="hover:underline">Settings</a></p>
+    </div>
+  </footer>
+
 </body>
 </html>
